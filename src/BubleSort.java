@@ -4,9 +4,9 @@ public class BubleSort {
     {
         int a[] = {4,2,1,5,3};
         System.out.println("Array Before sorting:"+ Arrays.toString(a));
-        for(int i=0;i<a.length - 1;i++)
+      for(int i=0;i<a.length - 1;i++)
         {
-            for(int j = 0;j<a.length-1;j++)
+            for(int j = 0;j<a.length-1-i;j++)
             {
                 if(a[j] >a[j+1]) {
                     int temp = a[j];
@@ -16,7 +16,7 @@ public class BubleSort {
                 }
 
             }
-        }
+       }
         System.out.println("Array after sorting: "+Arrays.toString(a));
 
     }
